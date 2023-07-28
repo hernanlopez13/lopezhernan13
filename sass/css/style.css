@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 2fr;
+  grid-template-areas: "header header header" "main main main" "aside aside aside" "form form form" "footer footer footer";
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  display: block;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+form {
+  grid-area: form;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header .inicio {
+  font-size: 12px;
+  padding: 7px;
+  margin: 40px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+header .nombre {
+  color: #911;
+  text-align: center;
+  font-size: 40px;
+}
+header .icono {
+  margin: 0;
+  padding-top: 20px;
+  width: 200px;
+  margin-right: 30px;
+}
+header .header {
+  text-align: center;
+  width: 90%;
+}
+header .logo {
+  text-align: center;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+header li {
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 5px;
+}
+header nav ul :hover {
+  background-color: #911;
+  transition: 1s;
+  color: #fff;
+}
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+main .img {
+  width: 300px;
+  height: 300px;
+}
+main .parrafo {
+  margin: 10px;
+  padding: 10px;
+}
+main .nombre {
+  color: #911;
+  text-align: center;
+  font-size: 40px;
+}
+
+.card {
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* //grid-noticias// */
+.grid-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "main main main" "aside aside aside" "footer fooetr foter";
+}
+
+main {
+  grid-area: main;
+}
+
+.noticias {
+  font-size: 15px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  right: 300px;
+  display: flex;
+}
+
+.promocion {
+  font-size: 40px;
+  text-align: center;
+  color: #083;
+}
+
+aside .aside {
+  text-align: start;
+  padding: 50px;
+}
+aside .nombre {
+  color: #911;
+  text-align: center;
+  font-size: 40px;
+}
+aside .card {
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+aside .cards {
+  flex: 50%;
+  display: flex;
+}
+aside .parrafocont {
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+aside .contacto {
+  text-align: center;
+  font-size: 35px;
+  color: #009;
+}
+
+.titulocentral {
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+}
+
+.parrafosobre {
+  font-size: 17px;
+  text-align: center;
+}
+
+.telefono {
+  text-align: center;
+}
+
+.noticias {
+  font-size: 15px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  right: 300px;
+  display: flex;
+}
+
+.contaside {
+  text-align: center;
+}
+
+.lugarpromo {
+  font-size: 30px;
+  text-align: center;
+}
+
+.parrapromo {
+  text-align: center;
+  font-size: 18px;
+}
+
+.imgbanco {
+  font-size: 30px;
+  text-align: center;
+  color: #009;
+}
+
+.imgban {
+  text-align: center;
+  padding: 20px;
+}
+
+footer .footer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin: 30px;
+  background-color: #999;
+  color: #fff;
+}
+footer .iconofot {
+  width: 30px;
+}
+footer .iconowat {
+  width: 40px;
+  border-radius: 60px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+footer .footer a {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: white;
+    width: 200px;
+  }
+  header {
+    font-size: 20px;
+    width: 200px;
+  }
+  .header img {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+@import "../modulos/body";
+@import "../modulos/header";    
+@import "../modulos/main";
+@import "../modulos/aside";
+@import "../modulos/footer";
+
+
+
+@media ( max-width: 576px) {
+    body{
+        background-color: white;
+        width: 200px;
+        }
+
+     header{
+        font-size: 20px;
+        width: 200px;
+        
+              
+    }  
+    .header img{
+        display: none;
+    }
+    
+     
+    aside{
+        display: none;
+     
+  }
+
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+  
+}
