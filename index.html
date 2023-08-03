@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Banco central de la provincia de buenos aires" content="todos tus tramites en un solo lugar"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./sass/css/style.css">
@@ -11,10 +12,11 @@
     <title>banco central</title>
 </head>
 <body>
-     <header class="header">  
-         <img class="logo" src="./assets/imagenes/encabezadocentral.jpg">
+     <header>
       
-       <nav> 
+         <img class="header" src="./assets/imagenes/encabezadocentral.webp">
+      
+       <nav class="header"> 
           <ul>
             <li><a href="./index.html">inicio</a></li> 
             <li><a href="./pages/sobrenosotros.html">sobre nosotros</a></li>      
@@ -29,34 +31,31 @@
 
      <main>
          <div class="nombre">
-           <h1>banco central</h1>
+           <h1>BANCO CENTRAL</h1>
            <h2>provincia de buenos aires</h2>
-
           </div>
  
          <div class="imagenes">
        
           <section>
-             <article>
-                      <img src="./assets/imagenes/cajeras.jpg" class="img">
+             <article class="cards">
+              
+                      <img src="./assets/imagenes/cajeras.webp" class="img">
                       <p class="parrafo">nuestras telefonistas atenderan<br> sus conultas de 9 a 17hs</p> 
+                    
             </article>      
           </section> 
       
-     
-      
-       
          <section>
-            <article> 
-                      <img src="./assets/imagenes/gente.jpg" class="img">
+            <article class="cards"> 
+                      <img src="./assets/imagenes/gente.webp" class="img">
                       <p class="parrafo">nuestro personal dara apoyo<br>espaecializado en cada sector<br> que necesite para resolver cualquier<br>necesidad que nuestros clientes necesiten.</p> 
             </article>            
          </section>
     
-        
          <section>
-           <article>
-                     <img src="./assets/imagenes/bancohablando.jpg"class="img" >
+           <article class="cards">
+                     <img src="./assets/imagenes/bancohablando.webp" class="img" >
                      <p class="parrafo">contamos con profesionales capacitados<br> en el rubro</p> 
            </article>
                      
@@ -76,23 +75,24 @@
       
      <form class="formularios">
       <div class="form">
-        <label for="nombre">nombre</label>
+        <label for="nombre">NOMBRE</label>
         <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
       </div>
         
        <div class="form" >
-        <label for="apellido">apellido</label>
+        <label for="apellido">APELLIDO</label>
         <input type="text" name="apellido" id="apellido" placeholder="ingrese su apellido"> 
        </div>
       <div class="form">
-        <label for="email">email</label>
+        <label for="email">E-MAIL</label>
         <input type="email" name="email" id="email" placeholder="ingrese su email">
        </div>
       
        <div class="form">
-        <label for="contraseña">contraseña</label>
+        <label for="contraseña">CONTRASEÑA</label>
         <input type="password" name="contraseña" id="contraseña" placeholder="ingrese su contraseña">
        </div>
+       <textarea name="mensaje" placeholder="escriba aqui su mensaje"></textarea>
       
        <input type="submit" name="enviar" id="enviar">
 
@@ -103,7 +103,7 @@
           <p>siguenos en todas nuestras redes</p> 
           <img class="iconofot" src="./assets/logos/instagram.7062f55e.svg" alt="">
           <img class="iconofot" src="./assets/logos/facebook-svgrepo-com.svg" alt="">
-          <img class="iconofot" src="./assets/logos/twitter.29b6fbd9.svg" alt="">
+          <img class="iconofot" src="./assets/logos/twiter (1).svg" alt="">
          
             <a href="https://instagram.com/bancoprovincia">instagram</a>
             <a href="https://facebook.com/bancoprovincia">facebook</a>

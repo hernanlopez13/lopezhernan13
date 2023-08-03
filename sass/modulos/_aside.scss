@@ -14,54 +14,44 @@ aside {
     
     .card{
         margin: 10px;
-        border: 1px solid #000;
+        border: 1px solid $negro;
         border-radius: 10px;
        }
       
-       .cards{
-          flex: 50%;
-          display: flex;
-          }
-         
-    
-    
-    
-
-
-
-     .parrafocont {
-        padding: 40px;
-        text-align: center;
-         font-size: 20px;
-       }
-
       .contacto {
         text-align: center;
         font-size: 35px;
         color: #009;
      
     }
+
+    .parrafocont {
+        padding: 40px;
+        text-align: center;
+         font-size: 20px;
+       } 
    
 }
 
 
-.titulocentral {
-    text-align: center;
-     padding: 15px;
-     margin: 10px;
-}
- .parrafosobre {
-   font-size: 17px;
-   text-align: center;
+   .titulocentral {
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+     }
 
- }
+  .parrafosobre {
+       font-size: 17px;
+       text-align: center;
 
-.telefono {
-    text-align: center;
-}
+    }
+
+  .telefono {
+     text-align: center;
+  }
 
 
-.noticias {
+  .noticias {
 
     font-size: 15px;
     padding: 20px;
@@ -71,12 +61,6 @@ aside {
     display: flex;
     
     }
-
-
-
-
-
- 
 
 
 
@@ -105,4 +89,8 @@ font-size: 18px;
 .imgban {
     text-align: center;
     padding: 20px;
+   }
+
+   .promociones {
+    text-align: center;
    }

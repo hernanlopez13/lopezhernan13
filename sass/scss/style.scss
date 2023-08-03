@@ -1,18 +1,19 @@
-@import "../modulos/body";
-@import "../modulos/header";    
-@import "../modulos/main";
-@import "../modulos/aside";
-@import "../modulos/footer";
-
-
-
-@media ( max-width: 576px) {
-    body{
-        background-color: white;
+   @import "../modulos/variables";
+   @import "../modulos/mixin";
+   @import "../modulos/body";
+   @import "../modulos/header";    
+   @import "../modulos/main";
+   @import "../modulos/aside";
+   @import "../modulos/form";
+   @import "../modulos/footer";
+  
+ @media ( max-width: 768px) {
+      body{
+        background-color: #fff;
         width: 200px;
-        }
+       }
 
-     header{
+    header{
         font-size: 20px;
         width: 200px;
         
@@ -20,13 +21,13 @@
     }  
     .header img{
         display: none;
-    }
+     }
     
      
     aside{
         display: none;
      
-  }
+       }
 
   main{
     display: flex;
@@ -34,4 +35,4 @@
     font-size: 20px;
   }
   
-}
+ }

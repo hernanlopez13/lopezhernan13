@@ -1,21 +1,20 @@
 header{
-  
+
+    
+
     .inicio {
         font-size: 12px;
         padding: 7px;
         margin: 40px;
-        border: 1px solid #000;
-        border-radius: 10px;  
-        
-        
-    }
+        border: 1px solid $negro;
+        border-radius: 10px;      
+      }
+       
 
-    
-      .nombre {
-         color: #911;
-         text-align: center;
-         font-size: 40px; 
-         } 
+    .nombre{
+     
+      @include titulo;
+    }
 
     
     .icono{
@@ -30,10 +29,9 @@ header{
     .header {
          text-align: center;
          width: 90%;
-        
          
-         
-    }
+    
+         }
     
     .logo {
         text-align: center;
@@ -44,35 +42,31 @@ header{
     
     
      li {
-        border: 1px solid #000; 
+        border: 1px solid $negro; 
         border-radius: 10px;
-        margin: 5px;
-    
-        
-    
+        margin: 5px;  
     }
     
     nav ul :hover {
         background-color: #911;
         transition: 1s;
-        color: #fff;
-        
-    
-    }
+        color: $blanco;
+      }
     
     a {
         text-decoration: none;
-        color: #000;
+        color: $negro;
     }
     
   
-}
+   }
 
-ul li {  
-    display: inline-block;
-    padding: 10px;
+   ul li {  
+       display: inline-block;
+       padding: 10px;
+       
+     }
 
-}
-
+ 
  
 

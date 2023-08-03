@@ -96,6 +96,11 @@ main .parrafo {
   margin: 10px;
   padding: 10px;
 }
+main .parrafocont {
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+}
 main .nombre {
   color: #911;
   text-align: center;
@@ -106,6 +111,19 @@ main .nombre {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 10px;
+}
+
+.cards {
+  margin: 15px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  background-color: #555;
+  color: #fff;
+  transition: transform 2s;
+}
+
+section article:hover {
+  transform: rotateY(180deg);
 }
 
 .imagenes {
@@ -137,6 +155,12 @@ main {
   display: flex;
 }
 
+.contacto {
+  text-align: center;
+  font-size: 35px;
+  color: #009;
+}
+
 .promocion {
   font-size: 40px;
   text-align: center;
@@ -157,19 +181,15 @@ aside .card {
   border: 1px solid #000;
   border-radius: 10px;
 }
-aside .cards {
-  flex: 50%;
-  display: flex;
+aside .contacto {
+  text-align: center;
+  font-size: 35px;
+  color: #009;
 }
 aside .parrafocont {
   padding: 40px;
   text-align: center;
   font-size: 20px;
-}
-aside .contacto {
-  text-align: center;
-  font-size: 35px;
-  color: #009;
 }
 
 .titulocentral {
@@ -221,31 +241,53 @@ aside .contacto {
   padding: 20px;
 }
 
-footer .footer {
+.promociones {
+  text-align: center;
+}
+
+.formularios {
+  width: 300px;
+  height: 100%;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.form {
+  padding: 5px;
+}
+
+.footer {
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
   margin: 30px;
-  background-color: #999;
+  background-color: hsl(44, 24%, 60%);
   color: #fff;
 }
-footer .iconofot {
+
+.footer a {
+  color: #fff;
+}
+
+.iconofot {
   width: 30px;
 }
-footer .iconowat {
+
+.iconowat {
   width: 40px;
   border-radius: 60px;
   position: fixed;
   right: 50px;
   bottom: 50px;
 }
-footer .footer a {
-  color: #fff;
-}
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   body {
-    background-color: white;
+    background-color: #fff;
     width: 200px;
   }
   header {
