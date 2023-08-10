@@ -44,7 +44,20 @@ main{
          color: $blanco;
          transition:transform 2s;
        }
+       .cards, .cards-atras{
+         -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
+       }
 
+       .cards-atras{
+         position: absolute;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #555;
+         color: $blanco;
+       }
+          
          section article:hover{
             transform: rotateY(180deg);
          }
@@ -54,6 +67,12 @@ main{
             flex-wrap: wrap;
             justify-content:space-around;
             
+         }
+         
+         .carousel-item{
+            max-height: 450px;
+            max-width: 1500px;
+            text-align: center;
          }
          
     
@@ -69,13 +88,14 @@ main{
         "header header header"
         "main main main"
         "aside aside aside"
-        "footer fooetr foter";
+        "footer footer footer";
         
          }
         
          main{
             grid-area: main;
          }
+        
         
          .noticias {
 
@@ -88,6 +108,7 @@ main{
             
             }
 
+         
             .contacto {
                text-align: center;
                font-size: 35px;
@@ -95,6 +116,7 @@ main{
                }
         
         .promocion {
+            padding: 20px;
             font-size: 40px;
             text-align: center;
             color: #083;

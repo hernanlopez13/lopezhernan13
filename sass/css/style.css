@@ -61,12 +61,12 @@ header .icono {
 }
 header .header {
   text-align: center;
-  width: 90%;
+  width: 1500px;
 }
 header .logo {
   text-align: center;
   flex-wrap: wrap;
-  width: 1000px;
+  width: 1400px;
 }
 header li {
   border: 1px solid #000;
@@ -122,6 +122,20 @@ main .nombre {
   transition: transform 2s;
 }
 
+.cards, .cards-atras {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cards-atras {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #555;
+  color: #fff;
+}
+
 section article:hover {
   transform: rotateY(180deg);
 }
@@ -132,6 +146,12 @@ section article:hover {
   justify-content: space-around;
 }
 
+.carousel-item {
+  max-height: 450px;
+  max-width: 1500px;
+  text-align: center;
+}
+
 /* //grid-noticias// */
 .grid-container {
   height: 100vh;
@@ -139,7 +159,7 @@ section article:hover {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "main main main" "aside aside aside" "footer fooetr foter";
+  grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer";
 }
 
 main {
@@ -162,6 +182,7 @@ main {
 }
 
 .promocion {
+  padding: 20px;
   font-size: 40px;
   text-align: center;
   color: #083;
@@ -221,11 +242,13 @@ aside .parrafocont {
 }
 
 .lugarpromo {
+  padding: 20px;
   font-size: 30px;
   text-align: center;
 }
 
 .parrapromo {
+  padding: 20px;
   text-align: center;
   font-size: 18px;
 }
@@ -261,7 +284,7 @@ aside .parrafocont {
 }
 
 .footer {
-  width: 100%;
+  width: 1500px;
   text-align: center;
   margin-bottom: 10px;
   margin: 30px;
@@ -285,25 +308,37 @@ aside .parrafocont {
   bottom: 50px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body {
     background-color: #fff;
-    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
   }
+}
+@media screen and (max-width: 600px) {
   header {
-    font-size: 20px;
-    width: 200px;
+    font-size: 15px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .header img {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
   }
+}
+@media screen and (max-width: 650px) {
   aside {
     display: none;
   }
   main {
     display: flex;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 15px;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

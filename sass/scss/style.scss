@@ -7,32 +7,52 @@
    @import "../modulos/form";
    @import "../modulos/footer";
   
- @media ( max-width: 768px) {
-      body{
+ @media screen and (max-width: 480px){
+
+       body{
         background-color: #fff;
-        width: 200px;
-       }
+         display: flex;
+         flex-wrap: wrap;
+       
+        }
+      }
 
-    header{
-        font-size: 20px;
-        width: 200px;
-        
-              
-    }  
-    .header img{
-        display: none;
-     }
-    
-     
+   @media screen and ( max-width: 600px){
+
+           header {
+             font-size: 15px;
+             width: 100px;
+             display: flex;
+             flex-wrap: wrap;
+   }
+
+
+     .header img {
+      display: flex;
+      flex-wrap: wrap;
+       }
+   }
+   
+    @media screen and (max-width: 650px){
     aside{
-        display: none;
+       display: none;
      
        }
 
-  main{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-  }
+     main{
+       display: flex;
+      flex-wrap: wrap;
+       font-size: 15px;
+    }
+
+     .footer{
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    }
+    
   
- }
+    
+ 
+ 
