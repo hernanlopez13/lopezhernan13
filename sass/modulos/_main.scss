@@ -31,6 +31,8 @@ main{
      }
 
      .card{
+      display: flex;
+      flex-wrap: wrap;
         margin: 10px;
         border: 1px solid $negro;
         border-radius: 10px;
@@ -80,21 +82,22 @@ main{
       /* //grid-noticias// */
      .grid-container{
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns:repeat(3, 1fr);
         grid-template-areas: 
-        "header header header"
-        "main main main"
-        "aside aside aside"
-        "footer footer footer";
+       "header header header"
+       "main main main"
+       "aside aside aside"
+       "footer footer footer";
         
          }
         
-         main{
-            grid-area: main;
+        main{
+           grid-area: main;
          }
+
         
         
          .noticias {

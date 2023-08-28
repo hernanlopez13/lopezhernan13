@@ -7,50 +7,58 @@
    @import "../modulos/form";
    @import "../modulos/footer";
   
- @media screen and (max-width: 480px){
+  @media screen and (max-width: 550px){
 
-       body{
+      body{
         background-color: #fff;
-         display: flex;
-         flex-wrap: wrap;
+        display: flex;
+          flex-wrap: wrap;
+          
        
         }
-      }
+        header{
+           font-size: 20px;
+          width: 100px;
+          display: flex;
+          flex-wrap: wrap;
+         }
 
-   @media screen and ( max-width: 600px){
+         h1, h2{
+          font-size: 40px;
+         }
 
-           header {
-             font-size: 15px;
-             width: 100px;
-             display: flex;
-             flex-wrap: wrap;
-   }
+           header img {
+             display: none;
+              
+           }
+
+           aside{
+            display: none;
+
+              }
+
+           main{
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            
+           } 
+           form{ 
+            display: flex;
+            flex-wrap: wrap;
+           }
+           
+
+         footer{
+           display: flex;
+          flex-wrap: wrap;
+          } 
+          
+          }
 
 
-     .header img {
-      display: flex;
-      flex-wrap: wrap;
-       }
-   }
    
-    @media screen and (max-width: 650px){
-    aside{
-       display: none;
-     
-       }
 
-     main{
-       display: flex;
-      flex-wrap: wrap;
-       font-size: 15px;
-    }
-
-     .footer{
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-    }
     
   
     
